@@ -35,7 +35,7 @@ static SVProgressHUDMaskType SVProgressHUDDefaultMaskType;
 static UIView *SVProgressHUDExtensionView;
 
 static const CGFloat SVProgressHUDRingRadius = 24;
-static const CGFloat SVProgressHUDRingNoTextRadius = 30;
+static const CGFloat SVProgressHUDRingNoTextRadius = 22;
 static const CGFloat SVProgressHUDParallaxDepthPoints = 10;
 static const CGFloat SVProgressHUDUndefinedProgress = -1;
 
@@ -333,8 +333,8 @@ static const CGFloat SVProgressHUDUndefinedProgress = -1;
 
 - (void)updatePosition {
 
-    CGFloat hudWidth = 100.0f;
-    CGFloat hudHeight = 100.0f;
+    CGFloat hudWidth = 75.0f;
+    CGFloat hudHeight = 75.0f;
     CGFloat stringHeightBuffer = 20.0f;
     CGFloat stringAndContentHeightBuffer = 80.0f;
 
@@ -1012,7 +1012,7 @@ static const CGFloat SVProgressHUDUndefinedProgress = -1;
 
 - (UIImageView *)imageView {
     if (!_imageView)
-        _imageView = [[UIImageView alloc] initWithFrame:CGRectMake(0.0f, 0.0f, 28.0f, 28.0f)];
+        _imageView = [[UIImageView alloc] initWithFrame:CGRectMake(0.0f, 0.0f, 25.0f, 25.0f)];
     [_imageView setContentMode:UIViewContentModeScaleAspectFit];
     if (!_imageView.superview)
         [self.hudView addSubview:_imageView];
