@@ -858,6 +858,7 @@ static const CGFloat SVProgressHUDUndefinedProgress = -1;
         _indefiniteAnimatedView.strokeThickness = SVProgressHUDRingThickness;
         _indefiniteAnimatedView.strokeColor = SVProgressHUDForegroundColor;
         _indefiniteAnimatedView.radius = self.stringLabel.text ? SVProgressHUDRingRadius : SVProgressHUDRingNoTextRadius;
+        _indefiniteAnimatedView.animate = YES;
         [_indefiniteAnimatedView sizeToFit];
     }
     return _indefiniteAnimatedView;
